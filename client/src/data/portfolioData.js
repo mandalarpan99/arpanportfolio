@@ -44,6 +44,7 @@ export const skills = [
   { name: "Postman", level: 85, category: "Tools" },
   { name: "Agile / JIRA", level: 78, category: "Tools" },
   { name: "Python", level: 78, category: "Programming" },
+  { name: "Java", level: 78, category: "Programming" },
 ];
 
 export const projects = [
