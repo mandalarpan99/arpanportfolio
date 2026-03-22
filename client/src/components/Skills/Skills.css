@@ -1,0 +1,42 @@
+.skill-filters {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  justify-content: center; margin: 2.5rem 0 2rem;
+}
+.filter-btn {
+  background: var(--surface); border: 1.5px solid var(--border);
+  color: var(--muted); padding: 0.45rem 1.1rem;
+  border-radius: 100px; font-size: 0.85rem; font-weight: 500;
+  cursor: pointer; transition: all 0.2s;
+}
+.filter-btn:hover, .filter-btn.active {
+  border-color: var(--accent); color: var(--accent);
+  background: var(--accent-10);
+}
+.skill-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.skill-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.25rem;
+  transition: all 0.25s; animation: fadeUp 0.5s ease both;
+}
+.skill-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.skill-header { display: flex; justify-content: space-between; margin-bottom: 0.75rem; }
+.skill-name { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+.skill-pct { font-family: 'Space Mono', monospace; font-size: 0.82rem; color: var(--accent); }
+.skill-bar-bg {
+  height: 5px; background: var(--bg); border-radius: 3px;
+  overflow: hidden; margin-bottom: 0.75rem;
+}
+.skill-bar-fill {
+  height: 100%; background: var(--gradient);
+  border-radius: 3px;
+  animation: barGrow 1s cubic-bezier(.22,.61,.36,1) both;
+  animation-delay: inherit;
+}
+.skill-cat-badge {
+  font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--muted);
+}
+@keyframes barGrow { from { width: 0 !important; } }

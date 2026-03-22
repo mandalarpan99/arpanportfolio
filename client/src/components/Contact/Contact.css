@@ -1,0 +1,88 @@
+.contact { text-align: center; }
+.contact-sub {
+  font-size: 1.05rem; color: var(--muted);
+  max-width: 520px; margin: 0.75rem auto 3rem; line-height: 1.7;
+}
+
+/* Contact cards */
+.contact-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; max-width: 860px; margin: 0 auto 3rem; text-align: left;
+}
+.cta-card {
+  display: flex; align-items: center; gap: 1rem;
+  background: var(--surface); border: 1.5px solid var(--border);
+  border-radius: 14px; padding: 1.25rem 1rem;
+  text-decoration: none; transition: all 0.25s;
+}
+.cta-card:hover {
+  border-color: var(--accent); transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.cta-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: var(--accent-10); display: flex;
+  align-items: center; justify-content: center;
+  color: var(--accent); flex-shrink: 0;
+}
+.cta-linkedin { background: rgba(10,102,194,0.12); color: #0A66C2; }
+.cta-github   { background: rgba(255,255,255,0.06); color: #e6edf3; }
+.cta-label { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.2rem; }
+.cta-value { font-size: 0.85rem; color: var(--text); font-weight: 500; }
+.cta-arrow { margin-left: auto; color: var(--muted); flex-shrink: 0; }
+
+/* Resume CTA */
+.resume-cta {
+  display: flex; align-items: center; gap: 1.25rem;
+  justify-content: center; margin-bottom: 4rem; flex-wrap: wrap;
+}
+.resume-cta p { color: var(--muted); font-size: 0.95rem; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--gradient); color: #fff;
+  padding: 0.72rem 1.75rem; border-radius: 8px;
+  font-weight: 600; font-size: 0.92rem;
+  text-decoration: none; transition: all 0.25s;
+  box-shadow: 0 4px 20px rgba(99,102,241,0.3);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(99,102,241,0.45); }
+
+/* Footer */
+.footer { border-top: 1px solid var(--border); padding-top: 2.5rem; }
+
+.footer-socials {
+  display: flex; gap: 0.85rem; justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.footer-social-icon {
+  position: relative;
+  width: 44px; height: 44px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid var(--border); color: var(--muted);
+  text-decoration: none; transition: all 0.25s;
+}
+.footer-social-icon svg { width: 18px; height: 18px; }
+
+/* Tooltip */
+.footer-social-tooltip {
+  position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text); font-size: 0.7rem; padding: 0.25rem 0.6rem;
+  border-radius: 5px; white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.2s;
+}
+.footer-social-icon:hover .footer-social-tooltip { opacity: 1; }
+
+/* Per-icon hover colours */
+.footer-social-github:hover   { border-color: #e6edf3; color: #e6edf3; background: rgba(230,237,243,0.06); }
+.footer-social-linkedin:hover { border-color: #0A66C2; color: #0A66C2; background: rgba(10,102,194,0.1); }
+.footer-social-facebook:hover { border-color: #1877F2; color: #1877F2; background: rgba(24,119,242,0.1); }
+.footer-social-instagram:hover{ border-color: #E4405F; color: #E4405F; background: rgba(228,64,95,0.1); }
+
+.footer-copy { color: var(--muted); font-size: 0.88rem; margin-bottom: 0.3rem; }
+.footer-copy strong { color: var(--text); }
+.footer-sub  { font-size: 0.72rem; color: var(--muted); opacity: 0.55; }
+
+@media (max-width: 768px) {
+  .contact-cards { grid-template-columns: 1fr; }
+}

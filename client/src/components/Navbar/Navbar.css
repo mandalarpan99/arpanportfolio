@@ -1,0 +1,62 @@
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background: rgba(10,10,20,0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+.nav-brand {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.4rem; font-weight: 700;
+  color: var(--text); text-decoration: none;
+  letter-spacing: 0.05em;
+}
+.brand-bracket { color: var(--accent); }
+.nav-links {
+  display: flex; align-items: center; gap: 0.25rem;
+  list-style: none; margin: 0; padding: 0;
+}
+.nav-links a {
+  color: var(--muted); text-decoration: none;
+  font-size: 0.9rem; padding: 0.4rem 0.85rem;
+  border-radius: 6px; transition: all 0.2s;
+  font-weight: 500; letter-spacing: 0.03em;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+.nav-links a.active { background: var(--accent-10); }
+.nav-resume-btn {
+  color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+  border-radius: 6px !important; padding: 0.38rem 1rem !important;
+  font-size: 0.85rem !important; transition: all 0.2s !important;
+  margin-left: 0.5rem;
+}
+.nav-resume-btn:hover { background: var(--accent) !important; color: var(--bg) !important; }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  background: none; border: none; cursor: pointer; padding: 4px;
+}
+.hamburger span {
+  display: block; width: 24px; height: 2px;
+  background: var(--text); border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.nav-open .hamburger span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav-open .hamburger span:nth-child(2) { opacity: 0; }
+.nav-open .hamburger span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+@media (max-width: 768px) {
+  .navbar { padding: 1rem 1.25rem; }
+  .hamburger { display: flex; }
+  .nav-links {
+    display: none; position: fixed;
+    top: 60px; left: 0; right: 0;
+    flex-direction: column; gap: 0;
+    background: rgba(10,10,20,0.97);
+    backdrop-filter: blur(20px);
+    padding: 1.5rem; border-bottom: 1px solid var(--border);
+  }
+  .nav-links.show { display: flex; }
+  .nav-links a { padding: 0.75rem 1rem; font-size: 1rem; display: block; }
+}

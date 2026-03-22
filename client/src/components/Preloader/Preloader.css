@@ -1,0 +1,36 @@
+.preloader {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+.preloader.fade-out { opacity: 0; visibility: hidden; pointer-events: none; }
+.pre-inner { text-align: center; }
+.pre-logo {
+  font-family: 'Space Mono', monospace;
+  font-size: 3rem; font-weight: 700; letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  animation: pulseGlow 1.5s ease-in-out infinite;
+}
+.pre-bracket { color: var(--accent); }
+.pre-name { color: var(--text); margin: 0 0.2em; }
+.pre-bar-wrap {
+  width: 260px; height: 3px; background: var(--surface);
+  border-radius: 2px; overflow: hidden; margin: 0 auto 1rem;
+}
+.pre-bar {
+  height: 100%; background: var(--gradient);
+  border-radius: 2px; transition: width 0.1s linear;
+}
+.pre-count {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem; color: var(--accent); margin: 0 0 0.4rem;
+}
+.pre-label {
+  font-size: 0.8rem; color: var(--muted); letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+@keyframes pulseGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

@@ -1,0 +1,87 @@
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem;
+  margin-top: 3rem;
+}
+.about-avatar {
+  position: relative; width: 100px; height: 100px;
+  margin: 0 auto 1.5rem;
+}
+.avatar-ring {
+  position: absolute; inset: -5px; border-radius: 50%;
+  border: 2px solid transparent;
+  background: var(--gradient) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out; mask-composite: exclude;
+  animation: spinRing 8s linear infinite;
+}
+.avatar-inner {
+  width: 100%; height: 100%; border-radius: 50%;
+  background: var(--surface); display: flex;
+  align-items: center; justify-content: center;
+}
+.avatar-initials {
+  font-family: 'Syne', sans-serif;
+  font-size: 2rem; font-weight: 800; color: var(--accent);
+}
+.about-bio {
+  font-size: 1rem; line-height: 1.8; color: var(--muted);
+  text-align: center; margin-bottom: 1.5rem;
+}
+.about-tags {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  justify-content: center; margin-bottom: 1.5rem;
+}
+.about-tag {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 100px; padding: 0.35rem 0.85rem;
+  font-size: 0.82rem; color: var(--text);
+}
+.about-contact {
+  display: flex; flex-direction: column; gap: 0.6rem; align-items: center;
+}
+.contact-chip {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.82rem; color: var(--muted); text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-chip:hover { color: var(--accent); }
+.col-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem; font-weight: 700; color: var(--text);
+  margin-bottom: 1rem; padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.edu-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.25rem;
+  margin-bottom: 1rem; transition: border-color 0.2s;
+}
+.edu-card:hover { border-color: var(--accent); }
+.edu-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.75rem; }
+.edu-degree { font-size: 0.95rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+.edu-inst { font-size: 0.82rem; color: var(--accent); }
+.edu-meta { text-align: right; flex-shrink: 0; }
+.edu-cgpa { display: block; font-family: 'Space Mono', monospace; font-size: 0.9rem; font-weight: 700; color: var(--accent2); }
+.edu-period { display: block; font-size: 0.75rem; color: var(--muted); margin-top: 0.2rem; }
+.edu-courses { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.edu-course {
+  background: var(--accent-10); color: var(--accent);
+  font-size: 0.72rem; padding: 0.2rem 0.6rem; border-radius: 4px;
+}
+.cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.cert-chip {
+  display: flex; align-items: flex-start; gap: 0.6rem;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 0.75rem;
+}
+.cert-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent2); flex-shrink: 0; margin-top: 3px;
+}
+.cert-name { font-size: 0.82rem; color: var(--text); font-weight: 500; }
+.cert-issuer { font-size: 0.72rem; color: var(--muted); margin-top: 0.1rem; }
+@keyframes spinRing { to { transform: rotate(360deg); } }
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .cert-grid { grid-template-columns: 1fr; }
+}
