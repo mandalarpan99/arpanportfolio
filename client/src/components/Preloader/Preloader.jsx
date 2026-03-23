@@ -36,7 +36,7 @@ export default function Preloader() {
           <div className="pre-bar" style={{ width: `${Math.min(count, 100)}%` }} />
         </div>
         <p className="pre-count">{Math.min(count, 100)}%</p>
-        <p className="pre-label">Initialising portfolio...</p>
+        {/* <p className="pre-label">Initialising portfolio...</p> */}
       </div>
     </div>
   );
