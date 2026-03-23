@@ -42,7 +42,7 @@ export default function Navbar() {
           </li>
         ))}
         <li>
-          <a href={personalInfo.resumeUrl} download className="nav-resume-btn">Resume</a>
+          <a href={personalInfo.resumeUrl} className="nav-resume-btn" target="_blank">Resume</a>
         </li>
       </ul>
       <button className="hamburger" onClick={toggleNav} aria-label="menu">

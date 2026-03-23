@@ -10,7 +10,7 @@ export const personalInfo = {
   email: "mandalarpan2014@gmail.com",
   phone: "+91-9647427931",
   website: "https://arpanmandal.in",
-  resumeUrl: "/ArpanMandal-Resume2026.pdf",
+  resumeUrl: "https://drive.google.com/file/d/1MNVH9euydPlTlAursylfbdhgwhdwn1Vq/view?usp=sharing",
   bio: "I craft scalable web applications with clean code and thoughtful UX. Passionate about the MERN stack, system design, and turning complex problems into elegant digital solutions. When I'm not building, I'm learning — or reading about geopolitics.",
   roles: [
     "Full-Stack Developer",

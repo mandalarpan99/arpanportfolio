@@ -61,7 +61,7 @@ export default function Contact() {
 
         <div className="resume-cta">
           <p>Want the full picture?</p>
-          <a href={personalInfo.resumeUrl} download className="btn-primary">
+          <a href={personalInfo.resumeUrl} className="btn-primary" target="_blank">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
             Download My Resume
           </a>
