@@ -6,16 +6,17 @@ export const personalInfo = {
   name: "Arpan Mandal",
   tagline: "Full-Stack Developer",
   subTagline: "MERN Stack · Software Engineer · Lifelong Learner",
-  location: "Delhi, India",
+  location: "Kolkata, India",
   email: "mandalarpan2014@gmail.com",
   phone: "+91-9647427931",
   website: "https://arpanmandal.in",
   resumeUrl: "https://drive.google.com/file/d/1MNVH9euydPlTlAursylfbdhgwhdwn1Vq/view?usp=sharing",
   bio: "I craft scalable web applications with clean code and thoughtful UX. Passionate about the MERN stack, system design, and turning complex problems into elegant digital solutions. When I'm not building, I'm learning — or reading about geopolitics.",
   roles: [
+    "IT Support Engineer",
+    "Help Desk Support",
     "Full-Stack Developer",
     "MERN Stack Engineer",
-    "React Enthusiast",
     "Problem Solver",
     "Tech Teacher",
   ],
@@ -28,10 +29,10 @@ export const personalInfo = {
 };
 
 export const skills = [
-  { name: "React.js", level: 90, category: "Frontend" },
-  { name: "Next.js", level: 80, category: "Frontend" },
-  { name: "JavaScript", level: 92, category: "Frontend" },
-  { name: "TypeScript", level: 75, category: "Frontend" },
+  { name: "React.js", level: 85, category: "Frontend" },
+  { name: "Next.js", level: 65, category: "Frontend" },
+  { name: "JavaScript", level: 90, category: "Frontend" },
+  { name: "TypeScript", level: 55, category: "Frontend" },
   { name: "HTML & CSS", level: 95, category: "Frontend" },
   { name: "Node.js", level: 85, category: "Backend" },
   { name: "Express.js", level: 85, category: "Backend" },
@@ -43,8 +44,12 @@ export const skills = [
   { name: "Git", level: 88, category: "Tools" },
   { name: "Postman", level: 85, category: "Tools" },
   { name: "Agile / JIRA", level: 78, category: "Tools" },
-  { name: "Python", level: 78, category: "Programming" },
-  { name: "Java", level: 78, category: "Programming" },
+  { name: "Python", level: 72, category: "Programming" },
+  { name: "M365", level: 67, category: "IT Support Engineer" },
+  { name: "Active Directory", level: 65, category: "IT Support Engineer" },
+  { name: "Desktop Support", level: 66, category: "IT Support Engineer" },
+  { name: "IT Support", level: 70, category: "IT Support Engineer" },
+  { name: "Windows Server", level: 70, category: "IT Support Engineer" },
 ];
 
 export const projects = [

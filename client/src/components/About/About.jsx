@@ -21,6 +21,7 @@ export default function About() {
               <span className="about-tag">🌍 Geopolitics Curious</span>
               <span className="about-tag">👨‍🏫 Tech Teacher</span>
               <span className="about-tag">⚡ MERN Specialist</span>
+              <span className="about-tag">⚡ IT Support Specialist</span>
             </div>
             <div className="about-contact">
               <a href={`mailto:${personalInfo.email}`} className="contact-chip">

@@ -2,7 +2,7 @@ import { useAppStore } from "../../store/appStore";
 import { skills } from "../../data/portfolioData";
 import "./Skills.css";
 
-const categories = ["All", "Frontend", "Backend", "Database", "Tools"];
+const categories = ["All", "Frontend", "Backend", "Database", "Tools", "Programming", "IT Support Engineer"];
 
 export default function Skills() {
   const { activeSkillCategory, setActiveSkillCategory } = useAppStore();
