@@ -47,6 +47,8 @@ export const skills = [
   { name: "Desktop Support", level: 66, category: "IT Support Engineer" },
   { name: "IT Support", level: 70, category: "IT Support Engineer" },
   { name: "Windows Server", level: 70, category: "IT Support Engineer" },
+  { name: "L1/L2 Support", level: 70, category: "IT Support Engineer" },
+  { name: "Assect Management", level: 70, category: "IT Support Engineer" },
 ];
 
 export const projects = [
