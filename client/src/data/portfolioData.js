@@ -32,7 +32,6 @@ export const skills = [
   { name: "React.js", level: 85, category: "Frontend" },
   { name: "Next.js", level: 65, category: "Frontend" },
   { name: "JavaScript", level: 90, category: "Frontend" },
-  { name: "TypeScript", level: 55, category: "Frontend" },
   { name: "HTML & CSS", level: 95, category: "Frontend" },
   { name: "Node.js", level: 85, category: "Backend" },
   { name: "Express.js", level: 85, category: "Backend" },
@@ -41,8 +40,6 @@ export const skills = [
   { name: "JWT Auth", level: 82, category: "Backend" },
   { name: "MongoDB", level: 83, category: "Database" },
   { name: "MySQL / SQL", level: 85, category: "Database" },
-  { name: "Git", level: 88, category: "Tools" },
-  { name: "Postman", level: 85, category: "Tools" },
   { name: "Agile / JIRA", level: 78, category: "Tools" },
   { name: "Python", level: 72, category: "Programming" },
   { name: "M365", level: 67, category: "IT Support Engineer" },
@@ -55,6 +52,16 @@ export const skills = [
 export const projects = [
   {
     id: 1,
+    title: "Windows Server & Active Directory Administration Lab",
+    description: "A hands-on Windows domain environment built to simulate real-world IT support and system administration scenarios using virtualization.",
+    tech: ["VMware" , "Windows Server 2022" , "Windows 10" , "Active Directory" , "AD DS" , "DNS" , "GPO" , "TCP/IP" , "Troubleshooting"],
+    type: "Personal Project",
+    highlights: ["Windows Server 2022 Domain Controller & AD DS management.", "Comprehensive Active Directory administration (OUs, Users, Security Groups, GPOs).", "End-to-end troubleshooting for DNS, static IPs, and client domain-joining."],
+    color: "#FF6B35",
+    emoji: "🅿️",
+  },
+  {
+    id: 2,
     title: "Full-Stack Car Parking Platform",
     description: "A real-time car parking reservation system serving 150+ daily users. Built with optimised SQL queries, caching strategies, and automated booking logic that slashes wait times.",
     tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "CodeIgniter"],
@@ -64,7 +71,7 @@ export const projects = [
     emoji: "🅿️",
   },
   {
-    id: 2,
+    id: 3,
     title: "MERN Stack CMS",
     description: "A production-quality Content Management System built with the full MERN stack. Features JWT-based authentication, role-based access, Git branching workflow, and fully documented API endpoints.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
@@ -74,7 +81,7 @@ export const projects = [
     emoji: "📝",
   },
   {
-    id: 3,
+    id: 4,
     title: "Healthcare Provider Portal",
     description: "A hospital management portal connecting patients with doctors, hospital listings, reviews, and direct messaging. Translates complex healthcare workflows into an intuitive web interface.",
     tech: ["HTML", "CSS", "PHP", "MySQL", "Bootstrap"],
@@ -84,7 +91,7 @@ export const projects = [
     emoji: "🏥",
   },
   {
-    id: 4,
+    id: 5,
     title: "Personal Portfolio Website",
     description: "Designed and shipped a responsive, mobile-first portfolio using React.js. Showcases projects with interactive UI components, optimised performance, and seamless cross-device compatibility.",
     tech: ["React.js", "JavaScript", "HTML", "CSS", "Bootstrap"],
@@ -107,6 +114,18 @@ export const experience = [
       "Designed optimised database schemas and RESTful APIs, cutting reservation processing time significantly.",
       "Implemented secure authentication, input validation, and cross-browser responsive design.",
       "Collaborated in Agile stand-ups, self-learned CodeIgniter, and maintained clean Git version history.",
+    ],
+  },{
+    role: "IT Support Engineer",
+    company: "CORE COM AI",
+    location: "Kolkata, India",
+    period: "2026",
+    type: "Full-time",
+    points: [
+      "Delivered responsive L1/L2 technical support for 100+ daily users, maintaining high resolution rates across Windows environments.",
+      "Managed Active Directory, user access permissions, and network troubleshooting to ensure seamless business operations.",
+      "Streamlined IT ticket workflows and created detailed technical documentation, reducing repeat issue resolution time.",
+      "Maintained hardware, software, and core IT infrastructure to minimize system downtime and enhance overall user productivity."
     ],
   },
 ];
